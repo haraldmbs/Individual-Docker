@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  orchestrator:
+    build: .
+    ports:
+      - "2222:2222"
+      - "2223:2223"
+      - "8080:8080"
+      - "30010-30015:30010-30015"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./challenges:/app/challenges
+      - ./challenges.json:/app/challenges.json
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 60s

@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  challenge:
+    build: .
+    image: ctf_web_easy:latest
+    expose:
+      - "80"
+    networks:
+      - default

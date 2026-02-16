@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  challenge:
+    image: alpine:latest
+    command: /bin/sh -c "echo 'Welcome to the key-value store. The flag is CTF{orchestrated_success}.' > /tmp/flag; nc -ll -p 1337 -e /bin/sh -c 'cat /tmp/flag; cat'"
+    expose:
+      - "1337"
+    networks:
+      - default
+
+networks:
+  default:

@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  challenge:
+    build: .
+    image: ctf_ssh_easy:latest
+    expose:
+      - "22"
+    networks:
+      - default

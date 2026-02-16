@@ -1,0 +1,28 @@
+[
+    {
+        "port": 2222,
+        "folder": "basic_nc",
+        "target_service": "challenge",
+        "target_port": 1337
+    },
+    {
+        "port": 2223,
+        "folder": "ssh_easy",
+        "target_service": "challenge",
+        "target_port": 22,
+        "banner": false
+    },
+    {
+        "port": 8080,
+        "folder": "web_easy",
+        "target_service": "challenge",
+        "target_port": 80,
+        "banner": false,
+        "mode": "redirect",
+        "port_range": [
+            30010,
+            30015
+        ],
+        "timeout": 300
+    }
+]
