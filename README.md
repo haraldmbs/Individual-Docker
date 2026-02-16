@@ -2,6 +2,10 @@
 
 A dynamic, on-demand Docker container system for CTF environments.
 
+## AI Disclaimer
+This was developed by utilising heavy usage of AI, but all features and plans where made by me, 
+but AI did the majority of coding/development, including creating the rest of this readme file.
+
 ## Features
 - **On-Demand Containers**: Starts a fresh environment for every connection.
 - **Redirect Mode**: Scalable Web challenges with ephemeral ports and specialized session management.
